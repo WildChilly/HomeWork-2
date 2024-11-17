@@ -39,3 +39,8 @@ print(float('123.456') * 10)
 
 # 1st program
 print(9 ** 0.5 * 5)
+
+#test 2 commit lessons Git Hub
+
+# 2nd program
+print(99.9 > 99.8 and 1000 != 1000.1)
