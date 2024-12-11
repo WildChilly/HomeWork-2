@@ -1,4 +1,3 @@
-
 name = input('Как к вам обращаться? '
              '(введите Ваше имя/никнейм): ')
 
@@ -8,22 +7,22 @@ while True:
     first = input('Введи первое число: ')
     second = input('Введи второе число: ')
     third = input('Введи третье число: ')
-    while True:
-        if len(first) == 1 and first.isalpha() or len(second) == 1 and second.isalpha() or third == 1 and third.isalpha():
-                print('Числа это циферки :))) буквы еще не могу')
-        break
+    #while True:
+    #if len(first) == 1 and first.isalpha() or len(second) == 1 and second.isalpha() or third == 1 and third.isalpha():
+    #print('Числа это циферки :))) буквы еще не могу')
+    #break
 
+    try:
+        if first.isalpha() or second.isalpha() or third.isalpha():
+            print('Числа это циферки :))) буквы еще не могу')
+        elif first == second and first == third and second == third:
+            print('Все числа похожи, ура :) Индекс: ', 3)
 
+        elif first == second or first == third or second == third:
+            print('Есть два похожих числа, неплохо :/ Индекс', 2)
 
+        elif first != second and first != third or second != third:
+            print('Похожих совсем нет:( Индекс: ', 0)
+    except:
 
-    if first == second and first == third and second == third:
-        print('Все числа похожи, ура :) Индекс: ', 3)
-    elif first == second or first == third or second == third:
-        print('Есть два похожих числа, неплохо :/ Индекс', 2)
-    elif first != second and first != third or second != third:
-        print('Похожих совсем нет:( Индекс: ', 0)
-
-    print('Пробуем еще?')
-
-
-
+        print('Пробуем еще?')

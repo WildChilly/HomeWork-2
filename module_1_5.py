@@ -21,7 +21,7 @@ print(mutable_list)
 print(mutable_list[0])
 print(mutable_list[2:7]*2)
 print(mutable_list[0::])
-total = sum(mutable_list[3:7])
+total = sum(mutable_list[3:7])/4
 
 print(total)
 mutable_list.append('Oil')
