@@ -19,7 +19,7 @@ from itertools import count
 # for i, k in dict_.items():
 #     print(i, k)
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 139]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 primes = []
 not_primes = []
 
