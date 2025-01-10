@@ -44,3 +44,4 @@ for i in range(len(numbers)):
 
 print('Primes: ' + str(primes))
 print('Not_primes: ' + str(not_primes))
+
