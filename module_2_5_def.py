@@ -29,10 +29,9 @@ malo_inform_sam_naydi('YA', 'Jack')
 def get_matrix(n,m,value):
     matrix = []
     for i in range(n):
-         matrix.append([]) #Очень долгое время ломал голову над тем, что на самом деле необходимо список обновить списком,
-        #                   что по русски написано в задании =))
-
-        for k in range (m):
+        matrix.append([]) #Очень долгое время ломал голову над тем, что на самом деле необходимо список обновить списком,
+                           #что по русски написано в задании =))
+        for k in range(m):
             matrix[i].append(value)
     return matrix
 result_1 = get_matrix(2,2,13)
