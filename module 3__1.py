@@ -8,6 +8,10 @@ def calls_func():
 
 
 #def your_f():       # через функцию счетчик
+
+#
+#
+#
    # your_f.counters += 1
 
 #your_f.counters = 0
