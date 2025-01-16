@@ -75,7 +75,7 @@ def collect_user_inputs():
         user_input = input("Введите значение (или 'exit' для выхода): ")
         if user_input.lower() == 'exit':
             break
-        user_inputs = a(user_input, user_inputs)
+        user_inputs = a(user_input, user_inputs) # здесь используется предыдущая функция def a(item, my_ list=None) она сохраняет в себя полученные значения из user_input
     print("Собранные данные:", user_inputs)
 
 collect_user_inputs()
