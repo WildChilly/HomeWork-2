@@ -37,7 +37,11 @@ summ_of_dicter(list1_,**dict2_, b=23)
 
 def print_params(a=1, b='Строка', c=True):
     print(a, b, c)
+def print_params_1(*things):
+    print(things)
+    print(*things)
 
+print_params_1(4,4,45,6,66,66.6,444,'Smack', True)
 print_params()
 print_params(b=25)
 print_params(c=[1, 2, 3])
@@ -61,7 +65,7 @@ a('ddffeeeeff fefe')
 a('Task', my_list=[422442,333,333,44])
 task = []
 a(3444,task)
-a()
+
 
 
 
