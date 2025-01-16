@@ -53,3 +53,29 @@ b = dict_students(grades=[[5,4,5,6,5,6,9]], students={'Burdakoff'})
 
 
 print(b)
+
+def add_item_to_shopping_list(item, shopping_list=None):
+    if shopping_list is None:
+        shopping_list = []
+    shopping_list.append(item)
+    print(f"Товар добавлен: '{item}', Текущий список покупок: {shopping_list}")
+
+add_item_to_shopping_list("Яблоки")
+add_item_to_shopping_list("Хлеб")
+
+def a(item, my_list=None): # система функция собирающая данные
+    if my_list is None:
+        my_list = []
+    my_list.append(item)
+    return my_list
+
+def collect_user_inputs():
+    user_inputs = []
+    while True:
+        user_input = input("Введите значение (или 'exit' для выхода): ")
+        if user_input.lower() == 'exit':
+            break
+        user_inputs = a(user_input, user_inputs)
+    print("Собранные данные:", user_inputs)
+
+collect_user_inputs()
