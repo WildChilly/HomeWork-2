@@ -34,8 +34,8 @@ print(stack) # тут увидим пустой список
 # Самостоятельная работа
 
 def get_multiplied_digits(number):
-    str_number = str(number)
-    first = int(str_number[0])
+    str_number = str(number) # перевели прием функции в строку
+    first = int(str_number[0]) # создали переменную
     if len(str_number) > 1:
         if first != 0:
 
@@ -46,9 +46,12 @@ def get_multiplied_digits(number):
         return first
 
 result = get_multiplied_digits(40203)
-result2 = get_multiplied_digits(402033300)
+result2 = get_multiplied_digits(402033030)
 print(result)
 print(result2)
+
+
+
 
 # к сожалению опять ни к чему не приуроченный пример
 # не удалось добиться вывода результата 2 до 24 по примеру. в конце получается 0
