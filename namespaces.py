@@ -1,18 +1,28 @@
 import math
-
+from module_3__33 import d
+#d = 5
+d = 8
 def square(x):
-    d = x ** 2
 
+    d = x ** 2
+    def even(x):
+       # d = x * 2
+        nonlocal d
+        d = x / 2
+        if d % 2 == 0:
+            print('Четное')
+        else:
+            print('Нечетное')
+    even(x)
     return d
 
 a = 5
-b = square(2)
+b = square(5)
 print(a)
 print(b)
 print(math.sqrt(a))
 print(globals())
-a = 6
-print(a)
+
 
 
 
