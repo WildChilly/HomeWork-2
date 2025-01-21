@@ -24,10 +24,26 @@ class Human:
 
             self.health -= 1
             print(f'{self.health}')
+# Перегрузка операторов пайтон
+    def __lt__(self, other): # Сравнение
+        return self.age < other.age
+
+    def __gt__(self, other):
+        return self.age > other.age
+
+    def __eq__(self, other):
+        return self.name == other.name and self.age == other.age
+    def __bool__(self):
+        return bool(self.age)
+
+    def __str__(self):
+        return f'{self.name}'
+
     def __len__(self):
         return self.age
 
     def __del__(self):
+        input()
         print(f'{self.name} ущел жи есть ехать на лифте, дон')
 
 den = Human('Денис', 33, 100) # определяет срабатывание метода инит,
@@ -51,3 +67,11 @@ print(revers_surname)
 print(reversed(max_.surname))
 max_.damage_health()
 print(len(max_))
+
+
+#Перегрузка (можно понимать как перезагрузка, а не выработка потенциала и мощности)
+print(den == max_)
+print(den > max_)
+print(max_)
+if den:
+    den.say_info()

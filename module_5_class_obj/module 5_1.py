@@ -62,11 +62,39 @@ class House:
     def __str__(self):
         return f'Название: {self.name}, количество этажей: {self.floors}'
 
+# НУЖНО БОЛЬШЕ ЭТАЖЕЙ следующее ДЗ
+    def __add__(self, value): #метод адд
+        self.floors += value
+        return self
+
+    def __radd__(self, value): # метод используется когда слева обьект не определен
+        return self + value
+
+    def __iadd__(self, value): # делает тоже самое что адд и  в чем разница?
+        self.floors += value
+        return self
+
+    def __eq__(self, other):
+        return  self.floors == other.floors
+    def __lt__(self, other):
+        return  self.floors < other.floors
+    def __le__(self, other):
+        return  self.floors <= other.floors
+    def __gt__(self, other):
+        return  self.floors > other.floors
+    def __ge__(self, other):
+        return  self.floors >= other.floors
+    def __ne__(self, other):
+        return  self.floors != other.floors
+
+
+
 h1 = House('Мега Дом Дон', 40)
 h2 = House('Derevnya Дом Дон', 4)
 h1.go_to(10)
 h2.go_to(45)
 h2.go_to(4)
+
 # Вопрос: как для последнего этажа убрать приписку из рандомного списка, чтобы сразу печаталось поздравление о
 # достижении нужной высоты?
 
@@ -81,5 +109,22 @@ print(str(h1))
 print(str(h2))
 # Это получается что мы в глобальной видимости имен переписали функцию лен?
 
+print(f'\n#### Вывод по третьей части задания ####\n')
+print(f'\n __add__')
+h1 += 22
+print(len(h1 + 3))
+print(len(h2 + 3))
+print(f'\n __eq__')
+print(h1 == h2)
+print(f'\n __')
+h1 = h1 + 3
+print(h1)
+print(h1 > h2) # __gt__
 
+print(h1 >= h2) # __ge__
 
+print(h1 < h2) # __lt__
+
+print(h1 <= h2) # __le__
+
+print(h1 != h2) # __ne__
