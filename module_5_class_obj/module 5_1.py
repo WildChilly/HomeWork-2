@@ -119,6 +119,7 @@ print(h1 == h2)
 print(f'\n __')
 h1 = h1 + 3
 print(h1)
+print(f'\n__ Перегруженные операторы сравнений')
 print(h1 > h2) # __gt__
 
 print(h1 >= h2) # __ge__
