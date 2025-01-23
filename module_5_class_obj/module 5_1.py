@@ -28,6 +28,10 @@
 import random
 print('\n@@@@@  Домашняя работа @@@@@\n')
 class House:
+
+    head = True # классовый атрибут
+
+
     def __init__(self, name, floors):
         self.name = name
         self.floors = floors
