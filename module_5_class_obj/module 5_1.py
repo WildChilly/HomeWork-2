@@ -29,7 +29,11 @@ import random
 print('\n@@@@@  Домашняя работа @@@@@\n')
 class House:
 
+    house_history = []
+
     head = True # классовый атрибут
+
+    def __new__(cls, *args, **kwargs):
 
 
     def __init__(self, name, floors):
